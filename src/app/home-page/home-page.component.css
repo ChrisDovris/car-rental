@@ -1,0 +1,11 @@
+body {
+  min-height: 85vh;
+}
+
+.row {
+  padding-top: 4rem;
+}
+
+img {
+  width: 100%;
+}

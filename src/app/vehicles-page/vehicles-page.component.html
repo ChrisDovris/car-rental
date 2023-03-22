@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5>Vehicle Models</h5>
+      <h2>Our rental fleet</h2>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div *ngFor="let vehicle of vehicles">
+          <button type="button" (click)="onSelect(vehicle)">{{vehicle.mark}} {{vehicle.model}}</button>
+        </div>
+      </div>
+        <div class="col-4">
+          <div *ngIf="selectedVehicle">
+            <img [src]="selectedVehicle.img" alt="">
+          </div>
+      </div>
+      <div class="col-3">
+        <div *ngIf="selectedVehicle">
+          <div class="row">
+            <div class="col">
+              <p> {{ selectedVehicle.price }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Mark: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.mark }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Model: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.model }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Tier: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.tier }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Doors: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.doors }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Fuel: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.fuel }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Trasition: </p>
+            </div>
+            <div class="col-6">
+              <p> {{ selectedVehicle.transition }} </p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success">Book</button>
+      </div>
+      </div>
+    </div>
+  </div>
