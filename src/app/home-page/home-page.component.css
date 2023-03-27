@@ -1,11 +1,53 @@
-body {
-  min-height: 85vh;
+
+.homepage {
+padding-top: 11rem;
+  min-height: 100vh;
 }
 
-.row {
-  padding-top: 4rem;
+.col-5 {
+  padding-top: 2rem;
+}
+
+.homepage h3 span {
+  font-weight: bold;
+  color:  #d90429;
 }
 
 img {
   width: 100%;
+}
+
+#book {
+  padding-top: 4rem;
+  min-height: 40vh;
+}
+
+.homeBtns {
+  padding-top: 70px;
+}
+
+.homeBtns a {
+  font-size: 1.4rem;
+  padding-right: 20px;
+}
+.homeBtns :hover {
+  color: white;
+  background-color: #ef233c ;
+}
+label {
+ color: #d90429;
+font-weight: bold;
+}
+
+.searchBtn {
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: center;
+  border: none;
+  background-color: #d90429;
+}
+
+.col-4 button:hover {
+  background-color: #2b2d42;
 }

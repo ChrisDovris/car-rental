@@ -2,26 +2,28 @@
   <div class="row justify-content-center align-self-end">
     <div class="col-3">
       <h4>COMPANY</h4>
-      <a href="" class="nav-link">Contact us</a>
-      <a href="" class="nav-link">Careers</a>
-      <a href="" class="nav-link">Blog</a>
+      <a [routerLink]="'/contact-page'" class="nav-link">Contact us</a>
+      <a style="cursor: pointer;" class="nav-link" (click)="onCareers()">Careers</a>
+      <a style="cursor: pointer;" class="nav-link" (click)="onBlog()">Blog</a>
     </div>
     <div class="col-3">
-      <h4>WORKING HOURS</h4>
+      <h4 style="padding-left: 0.5rem;">WORKING HOURS</h4>
       <p>Mon - Fri: 9:00 AM - 9:00 PM</p>
-      <p>Sat: 9:00 AM - 5:00 PM</p>
-      <p>Sunday: Closed</p>
+      <p style="padding-left: 1.5rem;">Sat: 9:00 AM - 5:00 PM</p>
+      <p style="padding-left: 3.2rem;">Sunday: Closed</p>
     </div>
     <div class="col-3">
       <h4>SUBSCIPTION</h4>
       <p>Subscribe on our newsletter for latest news and updates.</p>
-      <input type="email" class="form-control" name="" id="">
-      <button class="btn btn-success">Submit</button>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="onSubmit()">Submit</button>
+      </div>
     </div>
   </div>
 </footer>
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2023 Copyright:
-    <a class="text-dark" style="text-decoration:none;" href="http://www.linkedin.com/in/christos-dovris
+    <a class="text-white" style="text-decoration:none;" href="http://www.linkedin.com/in/christos-dovris
 
     ">ChrisDovris</a>

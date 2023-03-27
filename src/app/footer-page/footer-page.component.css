@@ -1,0 +1,19 @@
+footer {
+  padding-top: 3rem;
+  min-height: 40vh;
+}
+
+h4 {
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+button {
+  background-color: #ef233c;
+  color: white;
+  border-color: gainsboro;
+}
+
+button:hover {
+  background-color: #2b2d42;
+}

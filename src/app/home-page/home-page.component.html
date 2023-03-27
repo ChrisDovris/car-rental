@@ -1,49 +1,64 @@
 <div class="container">
-  <div class="row justify-content-center">
+  <div class="row homepage justify-content-center">
     <div class="col-5">
-      <div>
+      <div style="padding-left: 16px;">
       <h1>Rend a car, </h1>
-      <h3>quick and easy</h3>
-      </div>
+      <h3><span>quick</span> and <span>easy</span>. </h3>
       <div style="padding-top: 30px;">
-        <p>Choose your type of our variety of vehicles. </p>
+        <p class="unFocused">Choose your type of our variety of vehicles. </p>
       </div>
+    </div>
       <div class="homeBtns">
-        <button class="btn btn-lg btn-secondary">Book now</button> |
-        <button class="btn btn-lg btn-secondary">Learn more</button>
+        <a href="#book" class="btn btn-lg">Book now</a> |
+        <a href="#about" class="btn btn-lg"> Learn more</a>
       </div>
     </div>
     <div class="col-7">
       <img src="../../assets/car-home-page.png" alt="">
     </div>
-      <form action="">
+    </div>
+    <div class="row justify-content-center">
+      <form id="book"  #f="ngForm" (ngSubmit)="onSubmit(f)">
         <div class="row align-items-start">
         <div class="col-4">
         <label for="vehicle" class="form-label">Select vehicle:</label>
-        <input class="form-control" type="text" name="vehicle" id="vehicle">
+        <select class="form-select" name="" id="vehicle">
+              <option  value="default">Select a vehicle</option>
+              <option
+              *ngFor="let vehicle of vehicles"
+              [value]="vehicle.mark">
+              {{ vehicle.mark }} {{ vehicle.model }}
+            </option>
+        </select>
       </div>
       <div class="col-4">
         <label class="form-label" for="pick-up">Pick-up:</label>
-        <input type="text" class="form-control" id="pick-up">
+        <select  class="form-select" name="" id="pick-up">
+          <option value="default">Select a pick-up location</option>
+          <option value="skg">Thessaloniki Airport</option>
+          <option value="ath">Athena Airport</option>
+        </select>
       </div>
       <div class="col-4">
         <label class="form-label" for="drop-of">Drop-of:</label>
-        <input type="text" class="form-control" id="drop-of">
+        <select  class="form-select" name="" id="drop-of">
+          <option value="default">Select a drop-of location</option>
+          <option value="skg">Thessaloniki Airport</option>
+          <option value="ath">Athena Airport</option>
+        </select>
       </div>
       </div>
       <div class="row">
         <div class="col-4">
           <label class="form-label" for="pickUpDate">Pick-up date:</label>
-          <input class="form-control" type="text" id="pickUpDate" >
+          <input  class="form-control" type="date" id="pickUpDate"  name="pickUpDate" ngModel>
         </div>
         <div class="col-4">
           <label class="form-label" for="dropOfDate">Drop-off date:</label>
-          <input class="form-control" type="text" id="dropOfDate">
+          <input  class="form-control" type="date" id="dropOfDate" name="dropOfDate" ngModel>
         </div>
-        <div class="col-4">
-          <div class="d-grid gap-2">
-          <button class="btn btn-primary">Search</button>
-        </div>
+        <div class="col-4 align-self-end">
+          <button class="btn btn-primary searchBtn">Search</button>
         </div>
       </div>
       </form>

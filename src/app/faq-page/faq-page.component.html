@@ -1,22 +1,24 @@
 <div class="container">
-  <div class="row">
+  <div class="row text-center">
+    <div class="col-1"></div>
     <div class="col-10">
       <h4>FAQ</h4>
       <h2>Frequently Asked Qiestions</h2>
-      <p>Frequently Asked Questions about car rental process or payment etc.</p>
+      <p class="unFocused">Frequently Asked Questions about car rental process or payment etc.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-10">
-          <div *ngFor="let fqa of fqas; let i = index" >
-            <button (click)="onSelect(fqa)"> {{ fqa.question }} </button>
-          </div>
-          <div *ngIf="selectedFqa">
-            <div>
-              {{ selectedFqa.answer }}
-            </div>
-          </div>
-
-    </div>
-  </div>
+  <div>
+        <div *ngFor="let fqa of fqas">
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="fqaQue">
+                  {{fqa.question}}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="unFocused fqaAnswer"> {{fqa.answer}} </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+      </div>
+</div>
 </div>

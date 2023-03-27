@@ -1,0 +1,26 @@
+.container {
+  padding-top: 5rem;
+}
+
+button {
+  background-color: #ef233c;
+  color: white;
+}
+
+button:hover{
+  background-color: #2b2d42;
+  color: white;
+}
+.buttons {
+  padding-top: 1rem;
+}
+.backBtn {
+ padding-left: 1rem;
+  text-align: center;
+  width: 40%;
+}
+
+.submBtn {
+ margin-left: 5.5rem;
+  width: 40%;
+}

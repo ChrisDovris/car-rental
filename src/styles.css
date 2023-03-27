@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('./assets/car-fleet/red-lines-background.webp');
+  background-position: 20% 45%;
+
+}
+
+.unFocused {
+  color: #8d99ae;
+}
+
+
+
+

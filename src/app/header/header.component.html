@@ -1,34 +1,36 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <a class="navbar-brand" href="#home">CarRendal
-    <img src="../../assets/car-logo.png" width="40" height="30" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <img src="../../assets/car-logo.png" width="40" height="30" alt=""><span></span></a>
+    <button class="navbar-toggler" style="margin-right: 1.2rem;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" (click)="isCollapsed=!isCollapsed"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#models">Vehicle Models</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-page">Contact</a>
+        </li>
+        </ul>
+          <ul class="navbar-nav" id="navbarSupportedContent">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/auth">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Resister</a>
         </li>
       </ul>
     </div>
-    <div class="d-flex justify-self-end">
-      <button class="btn">Sign in</button>
-      <button class="btn">Log out</button>
-    </div>
-  </div>
 </nav>
 <app-home-page id="home"></app-home-page>
-<app-about-page id="about"></app-about-page>
 <app-vehicles-page id="models"></app-vehicles-page>
+<app-about-page id="about"></app-about-page>
 <app-faq-page></app-faq-page>
 <app-footer-page></app-footer-page>

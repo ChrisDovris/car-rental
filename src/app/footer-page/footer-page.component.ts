@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class FooterPageComponent {
 
+  onSubmit() {
+    alert('Well done, you will be first to now about our news and updates!')
+  }
+
+  onCareers() {
+    alert('UNDER CONSTRUCTION PAGE!')
+  }
+
+  onBlog(){
+    alert('UNDER CONSTRUCTION PAGE!')
+  }
+
 }
