@@ -3,6 +3,7 @@
 }
 
 button {
+  width: 40%;
   background-color: #ef233c;
   color: white;
 }
@@ -11,16 +12,58 @@ button:hover{
   background-color: #2b2d42;
   color: white;
 }
+
 .buttons {
-  padding-top: 1rem;
-}
-.backBtn {
- padding-left: 1rem;
-  text-align: center;
-  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
-.submBtn {
- margin-left: 5.5rem;
-  width: 40%;
+span {
+  font-weight: bolder;
 }
+
+h4{
+  font-weight: bold;
+}
+
+.info hr {
+  margin-top: 3px;
+  width: 80%;
+  border: 3px solid #ef233c;
+}
+
+@media only screen and (max-width:555px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .col-6, .col-4 {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width:505px){
+
+button {
+  width: 45%;
+}
+
+
+
+}
+
+@media only screen and (max-width:453px) {
+
+  .buttons {
+   flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+

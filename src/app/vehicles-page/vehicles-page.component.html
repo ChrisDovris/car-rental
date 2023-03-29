@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container responsive">
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
@@ -6,17 +6,17 @@
       <p>Our rental fleet</p>
     </div>
     <div class="row table">
-      <div class="col-3">
+      <div class="col-3 vehicles">
         <div *ngFor="let vehicle of vehicles">
           <button type="button" class="leftSide" (click)="onSelect(vehicle)">{{vehicle.mark}} {{vehicle.model}}</button>
         </div>
       </div>
-        <div class="col-6">
+        <div class="col-6 imgDiv">
           <div *ngIf="selectedVehicle">
             <img class="img-fluid" [src]="selectedVehicle.img" alt="">
           </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 info">
         <div *ngIf="selectedVehicle">
           <div class="row rightSide priceTag">
             <div class="col">

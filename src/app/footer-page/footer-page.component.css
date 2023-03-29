@@ -1,3 +1,7 @@
+.sub hr {
+  display: none;
+}
+
 footer {
   padding-top: 3rem;
   min-height: 40vh;
@@ -16,4 +20,56 @@ button {
 
 button:hover {
   background-color: #2b2d42;
+}
+
+@media only screen and (max-width:875px) {
+
+  .hours {
+    display: none;
+  }
+
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:875px) {
+
+  .company {
+    width: 30%;
+  }
+  .sub{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .company {
+    width: 30%;
+  }
+  .sub{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:500px){
+
+  .sub hr {
+    display:list-item
+  }
+
+  .row {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .col-3 {
+    width: 80%;
+    margin: 1rem 0rem;
+  }
 }

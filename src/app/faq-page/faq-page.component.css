@@ -34,3 +34,58 @@ p {
 .mat-expansion-panel-header.mat-expanded:focus {
   background-color: #ef233c;
 }
+
+.fqas {
+  width: 90%;
+  margin: auto;
+}
+
+@media only screen and (max-width:768px) {
+
+  h4{
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+
+  .fqaQue {
+    font-size: 1.1rem;
+  }
+
+}
+
+@media only screen and (max-width:768px){
+
+.container {
+  padding-top: 8rem;
+}
+
+.fqaAnswer{
+  font-size: 0.9rem;
+}
+
+}
+
+@media only screen and (max-width:395px) {
+
+  h4{
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+
+  .fqaQue {
+    font-size: 0.7rem;
+  }
+
+}

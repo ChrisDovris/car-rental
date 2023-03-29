@@ -70,3 +70,95 @@ border-bottom: 1px solid black;
   background-color: #2b2d42;
 }
 
+@media only screen and (max-width: 993px){
+
+  .table {
+    margin: auto;
+    padding: 0px 0px;
+  }
+  .row .col-3 {
+    width: 26.5%;
+  }
+
+  .leftSide{
+    padding-left: 0px;
+    font-weight: bold;
+    border: none;
+    font-size: 0.95rem;
+  }
+  .imgDiv {
+    width: 45%;
+  }
+
+  .priceTag span{
+    padding-right: 10px;
+    font-size: 23px;
+    font-weight: bolder;
+  }
+  .priceTag p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .responsive {
+
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .leftSide{
+    padding-left: 0px;
+    font-weight: bold;
+    border: none;
+    font-size: 0.80rem;
+  }
+
+  .rightSide {
+    max-height: 35px;
+  }
+
+  .rightSide p {
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .col-10 {
+    min-width: 80%;
+  }
+
+  .vehicles {
+    min-width: 80%;
+  }
+  .info {
+    min-width: 80%;
+  }
+
+  .col-6 {
+    width: 80%;
+  }
+
+  .leftSide{
+    width: 100%;
+    padding: 0px 0px ;
+    font-weight: bold;
+    border: none;
+    font-size: 1.5rem;
+
+  }
+
+  .imgDiv {
+    width: 70%;
+    margin: auto;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+
+
+
+}
